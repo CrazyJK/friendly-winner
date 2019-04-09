@@ -2,8 +2,8 @@
   Jhoms Log Analyzer
   
   Usage. 
-         java -jar JhomsLogAnalyzer-1.0.jar
-              --log.path="/Users/namjk/OneDrive - 주식회사 핸디소프트/_Shared/logs_gw8" 
+         java -jar JhomsLogAnalyzer.jar
+              --log.path="/Users/namjk/log-path"
               --name.like=dispatch
 
   ${application.title} ${application.formatted-version} by Spring Boot ${spring-boot.formatted-version}

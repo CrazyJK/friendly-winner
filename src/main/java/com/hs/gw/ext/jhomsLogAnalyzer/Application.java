@@ -32,12 +32,12 @@ public class Application implements ApplicationRunner {
 	 */
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		log.info("Application started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
-		log.info("NonOptionArgs: {}", args.getNonOptionArgs());
-		log.info("OptionNames: {}", args.getOptionNames());
+		log.info("JhomsLogAnalyzer started with command-line arguments: {}", Arrays.toString(args.getSourceArgs()));
+		log.debug("NonOptionArgs: {}", args.getNonOptionArgs());
+		log.debug("OptionNames: {}", args.getOptionNames());
 
 		for (String name : args.getOptionNames()) {
-			log.info("arg " + name + "=" + args.getOptionValues(name));
+			log.info("arg {} =  {}", name, args.getOptionValues(name));
 		}
 
 		if (validArgument(args, "log.path") && validArgument(args, "name.like")) {

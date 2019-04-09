@@ -44,7 +44,7 @@ public class AnalyzingServiceImpl implements AnalyzingService {
 			files.addAll(FileUtils.listFiles(new File(logPath), FileFilterUtils.prefixFileFilter(nameLike), null));
 		}
 		if (files.size() == 0) {
-			log.error("log name info not exist");
+			log.error("log file not found");
 			return;
 		}
 		
